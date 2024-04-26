@@ -16,9 +16,9 @@ def home():
 
         prediction = model.predict_proba([pre_processed_text])
 
-        first_row_percentages = [f"{prob * 100:.2f}%" for prob in prediction[0]]
+        first_row_percentages = [f"{prob * 100:.0f}%" for prob in prediction[0]]
 
-        return {"answer": first_row_percentages[1]}
+        return {"Chance de ser fake news": first_row_percentages[1]}
 
 if __name__ == '__main__':
     app.run(debug=True)
