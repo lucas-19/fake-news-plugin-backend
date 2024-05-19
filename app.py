@@ -4,7 +4,7 @@ from preprocessing import preprocessing
 
 app = Flask(__name__)
 
-model = load('modelo_treinado.joblib')
+model = load('modelo_treinado_fake_recogna.joblib')
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
