@@ -7,6 +7,8 @@
 
 ```
   pip install flask 
+  pip install joblib
+  pip install unidecode
 ```
 
 ### Executando a aplicação localmente
